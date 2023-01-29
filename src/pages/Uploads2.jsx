@@ -3,8 +3,19 @@ import AWS from 'aws-sdk';
 import { v4 as uuid } from 'uuid';
 
 const Uploads = () => {
+// let isConfigUpdate = false;
+// let reader = new FileReader();
+
 async function uploadToS3Bucket(stream, credential, cd) {
     try {
+        // if (!window.AWS) {
+        //     return
+        // }
+        // if (!isConfigUpdate) {
+        //     window.AWS.config.update(({ region: credential.region }));
+        //     isConfigUpdate = true;
+        // }
+
         let s3 = new AWS.S3({
             credentials: new AWS.Credentials({
                 apiVersion: 'latest',

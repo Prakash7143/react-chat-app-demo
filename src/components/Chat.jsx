@@ -17,7 +17,7 @@ const Chat = () => {
       <div className="chatInfo">
         <span>{data.user.displayName}</span>
         <div className="chatIcons">
-          <Link to="/uploads"><img src={Video} alt="ic 1" /></Link>
+          <Link to="/pay"><img src={Video} alt="ic 1" /></Link>
           <img src={Picture} alt="ic 2" />
           <img src={User} alt="ic 3" />
         </div>

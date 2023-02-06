@@ -11,7 +11,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import { AuthContext } from './contexts/AuthContext';
-import Uploads from './pages/Uploads';
+import Payments from './pages/Payments';
 
 const App = () => {
 
@@ -38,10 +38,10 @@ const App = () => {
               </ProtectedRoute>
             } />
             <Route
-            path="/uploads"
+            path="/pay"
             element={
               <ProtectedRoute>
-                <Uploads/>
+                <Payments/>
               </ProtectedRoute>
             } />
           <Route path="login" element={<Login/>} />
